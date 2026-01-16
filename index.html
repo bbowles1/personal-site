@@ -9,6 +9,8 @@
   <title>Brad.dev</title>
   <link rel="stylesheet" href="src/reset.css" />
   <link rel="stylesheet" href="src/index.css" />
+  <link href="./assets/nucleotides-light.svg" rel="icon" media="(prefers-color-scheme: light)">
+  <link href="./assets/nucleotides-dark.svg" rel="icon" media="(prefers-color-scheme: dark)">
 </head>
 <body>
 <table class="header">
@@ -17,7 +19,9 @@
       <h1 class="title">Bradley Bowles</h1>
       <span class="subtitle">Bioinformatics for cancer diagnosis.</span>
     </td>
-    <th rowspan="3">Graphic</th>
+    <th rowspan="3">
+      <img id="icon" src="./assets/nucleotides-dark.svg" alt="icon" style="width: 115px; height: 115px;">
+    </th>
     <td class="width-min"><a href="https://github.com/bbowles1">github</a></td>
   </tr>
   <tr>
@@ -29,6 +33,7 @@
     <td><a href="https://bsky.app/profile/bradbowles.bsky.social">bsky</a></td>
   </tr>
 </table>
+
 <label class="debug-toggle-label"><input type="checkbox" class="debug-toggle" /> Debug mode</label>
 <nav id="TOC" role="doc-toc">
 <h2 id="toc-title">Contents</h2>
@@ -48,7 +53,7 @@ Drawings</a></li>
 <h2 id="introduction">Hello!</h2>
 <p> My name is Bradley Bowles and I'm a bioinformatics developer 
   using multi-omics to improve our understanding of cancer. In my 
-  day job I'm a scientist at Tempus AI, where I work on the RNA team 
+  day job I'm a Senior scientist at Tempus AI, where I work on the RNA team 
   to generate information on tumor gene expression and splicing. However, 
   this is my personal site where I also like to exhibit side projects 
   of mine, including rare disease work from my PhD. My interests are 
@@ -59,7 +64,7 @@ Drawings</a></li>
   recently, from a professional standpoint. For anyone looking to get in 
   touch, you can view the links at the top of the page (LinkedIn, 
   GitHub, and Bluesky). Lastly, the views on this site are mine, and 
-  do not represent positions of my employer</p>
+  do not represent positions of my employer.</p>
 
 <h2 id="recent-works">Recent Work</h2>
 
@@ -70,12 +75,10 @@ Official works from Tempus AI that I contributed to recently:
 11-2025  |  Pan-Cancer Fusion Detection
 </summary>
 <p>
-I supported recent work from Tempus where we evaluated a multi-omics approach 
-to use DNA and RNA for the detection of gene rearrangements in cancer. This 
-retrospective work included 67,278 patients with 43 unique cancer types and 
-indicated that RNA utilization increases the detection rate of gene fusions. 
-The increased RNA detection rate was greatest for BRAF and NRG1 fusions. 
-You can <a href="https://www.nature.com/articles/s41591-025-01876-3">read the full paper here</a>.
+I supported a retrospective study of 67,278 patients with 43 unique tumor types who
+received matched DNA and RNA sequencing. Results indicated that RNA utilization 
+increased the detection rate of gene fusions, and that this increase was greatest for 
+BRAF and NRG1 fusions. You can <a href="https://www.nature.com/articles/s41591-025-01876-3">read the full paper here</a>.
 </p>
 </details>
 
@@ -84,23 +87,38 @@ You can <a href="https://www.nature.com/articles/s41591-025-01876-3">read the fu
 09-2025  |  xR-IVD 510(k) Clearance
 </summary>
 <p>
-In September 2025, Tempus received 510(k) clearance from the FDA for the xR-IVD 
-assay, which includes detection of gene rearrangements using RNA. I have been 
-very fortunate to work on the development of this device alongside so many 
-talented colleagues, and supported the precision and limit of detection aspects 
-of the submission. You can read the <a href="https://investors.tempus.com/news-releases/news-release-details/tempus-receives-us-fda-510k-clearance-tempus-xr-ivd-its-rna-ngs">official press release</a> here.
+In September 2025, Tempus received FDA 510(k) clearance to use the xR 
+assay for the detection of gene rearrangements. I was the primary scientist 
+responsible for delivering the precision and limit of detection study 
+results. You can read the <a href="https://investors.tempus.com/news-releases/news-release-details/tempus-receives-us-fda-510k-clearance-tempus-xr-ivd-its-rna-ngs">official press release</a> here.
 </p>
 </details>
 
+<h2 id="other-works">Other Works</h2>
+<p>Beyond my work as an industry scientist, I maintain several side projects.</p>
 
-<p>Monospace fonts are dear to many of us. Some find them more readable,
-consistent, and beautiful, than their proportional alternatives. Maybe
-we’re just brainwashed from spending years in terminals? Or are we
-hopelessly nostalgic? I’m not sure. But I like them, and that’s why I
-started experimenting with all-monospace Web.</p>
+<figure>
+<pre>
+▗▄▄▖ ▗▄▄▖ ▗▖ ▗▖▗▖  ▗▖
+▐▌ ▐▌▐▌ ▐▌▐▌ ▐▌▐▌  ▐▌
+▐▛▀▚▖▐▛▀▚▖▐▌ ▐▌▐▌  ▐▌
+▐▙▄▞▘▐▌ ▐▌▝▚▄▞▘ ▝▚▞▘ 
+</pre>
+<figcaption>
+<a href="https://github.com/bbowles1/Upstream-Display">BRad's Upstream Visualizer.</a>
+</figcaption>
+</figure>
 
 
-<h2 id="the-basics">The Basics</h2>
+<pre><code>▗▄▄▖ ▗▄▄▖ ▗▖ ▗▖▗▖  ▗▖
+▐▌ ▐▌▐▌ ▐▌▐▌ ▐▌▐▌  ▐▌
+▐▛▀▚▖▐▛▀▚▖▐▌ ▐▌▐▌  ▐▌
+▐▙▄▞▘▐▌ ▐▌▝▚▄▞▘ ▝▚▞▘ 
+                     
+                     
+                     </code></pre>
+
+
 <p>This document uses a few extra classes here and there, but mostly
 it’s just markup. This, for instance, is a regular paragraph.</p>
 <p>Look at this horizontal break:</p>
