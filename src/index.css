@@ -25,7 +25,9 @@
   font-size: 16px;
 }
 
-#logo {
+#icon-container {
+  width: 115px;
+  height: 115px;
   background-image: url('./assets/nucleotides-light.svg');
   background-size: contain;
   background-repeat: no-repeat;
@@ -33,13 +35,9 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --text-color: #fff;
-    --text-color-alt: #aaa;
-    --background-color: #000;
-    --background-color-alt: #111;
+  #icon-container {
+    background-image: url('./assets/nucleotides-dark.svg');
   }
-
 }
 
 * {
