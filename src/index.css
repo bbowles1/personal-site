@@ -25,20 +25,6 @@
   font-size: 16px;
 }
 
-#icon-container {
-  width: 115px;
-  height: 115px;
-  background-image: url('./assets/nucleotides-light.svg');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-@media (prefers-color-scheme: dark) {
-  #icon-container {
-    background-image: url('./assets/nucleotides-dark.svg');
-  }
-}
 
 * {
   box-sizing: border-box;
