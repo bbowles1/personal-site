@@ -35,19 +35,27 @@
   font-size: 16px;
 }
 
-body.light-mode {
+
+@media (prefers-color-scheme: light) {
+  :root {
   --text-color: var(--text-color-light);
   --text-color-alt: var(--text-color-alt-light);
   --background-color: var(--background-color-light);
   --background-color-alt: var(--background-color-alt-light);
+  }
 }
 
-body.dark-mode {
+@media (prefers-color-scheme: dark) {
+  :root {
   --text-color: var(--text-color-dark);
   --text-color-alt: var(--text-color-alt-dark);
   --background-color: var(--background-color-dark);
   --background-color-alt: var(--background-color-alt-dark);
+  }
 }
+
+
+
 
 
 * {
