@@ -1,17 +1,6 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-
-  <!-- correctly load light/dark -->
-  <script>
-    (function() {
-      const theme = localStorage.getItem('theme');
-      if (theme === 'dark') {
-        document.documentElement.classList.add('dark');
-      }
-    })();
-  </script>
-
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
@@ -20,8 +9,7 @@
   <title>Bioinformatics by Brad</title>
   <link rel="stylesheet" href="src/reset.css" />
   <link rel="stylesheet" href="src/index.css" />
-  <link href="./assets/nucleotides-light.svg" rel="icon" media="(prefers-color-scheme: light)">
-  <link href="./assets/nucleotides-dark.svg" rel="icon" media="(prefers-color-scheme: dark)">
+  <link href="./assets/nucleotides-all-modes.svg" rel="icon">
 </head>
 <body>
 <table class="header">
@@ -32,8 +20,7 @@
     </td>
     <th rowspan="3" style="vertical-align: middle;">
       <picture>
-      <source srcset="./assets/nucleotides-dark.svg" media="(prefers-color-scheme: dark)">
-      <img id="icon" src="./assets/nucleotides-light.svg" alt="icon" style="width: 115px; height: 115px;">
+        <img src="./assets/nucleotides-all-modes.svg" alt="icon" style="width: 115px; height: 115px;">
       </picture>
   </th>
   </th>
