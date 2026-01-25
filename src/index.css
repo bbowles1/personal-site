@@ -13,6 +13,16 @@
   --background-color: #fff;
   --background-color-alt: #eee;
 
+  --text-color-light: #000;
+  --text-color-alt-light: #666;
+  --background-color-light: #fff;
+  --background-color-alt-light: #eee;
+
+  --text-color-dark: #fff;
+  --text-color-alt-dark: #aaa;
+  --background-color-dark: #000;
+  --background-color-alt-dark: #111;
+
   --font-weight-normal: 500;
   --font-weight-medium: 600;
   --font-weight-bold: 800;
@@ -25,14 +35,20 @@
   font-size: 16px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --text-color: #fff;
-    --text-color-alt: #aaa;
-    --background-color: #000;
-    --background-color-alt: #111;
-  }
+body.light-mode {
+  --text-color: var(--text-color-light);
+  --text-color-alt: var(--text-color-alt-light);
+  --background-color: var(--background-color-light);
+  --background-color-alt: var(--background-color-alt-light);
 }
+
+body.dark-mode {
+  --text-color: var(--text-color-dark);
+  --text-color-alt: var(--text-color-alt-dark);
+  --background-color: var(--background-color-dark);
+  --background-color-alt: var(--background-color-alt-dark);
+}
+
 
 * {
   box-sizing: border-box;
